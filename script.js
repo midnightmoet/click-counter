@@ -8,8 +8,10 @@
 
 
 // This code is executed when the page is loaded and keeps count when refreshed
+// Get the click count start at zero
 let clicks = 0;
 
+// Function to update the click count and update the page
 function initiateClicks() {
     let clickStr = localStorage.getItem("clicks");
     if(clickStr == undefined){
@@ -21,8 +23,16 @@ function initiateClicks() {
     document.getElementById("clicks").innerHTML = clicks;
 }
 
+// Function to increment the click count and update the page
 function doClick() {
     clicks += 1;
+    localStorage.setItem("clicks", clicks);
+    document.getElementById("clicks").innerHTML = clicks;
+}
+
+// Function to reset the click count to zero and update the page
+function resetClicks() {
+    clicks = 0;
     localStorage.setItem("clicks", clicks);
     document.getElementById("clicks").innerHTML = clicks;
 }
