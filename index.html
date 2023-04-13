@@ -9,9 +9,13 @@
 		<script src="script.js" defer></script>
 	</head>
 	<body>
-		<div class="main">
+		<!-- HEADER -->
+		<header>
 			<h1>Click Counter</h1>
-			<p><a id="clicks">0</a></p>
+		</header>
+		<div class="main">
+			<p>Number of clicks:</p>
+			<p class="clickBox"><a id="clicks">0</a></p>
 			<button type="button" id="clickme">Click me</button>
 			<button type="reset" onclick="resetClicks()">Reset</button>
 
