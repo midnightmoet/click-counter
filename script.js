@@ -1,6 +1,5 @@
-
 //This alert is just for thanking you for checking out this click counter!
-alert("Thanks for checking out this click counter!");
+// alert("Thanks for checking out this click counter!");
 
 // This code is executed when the page is loaded but resets count when refreshed
 // let button = document.getElementById("clickme"),
